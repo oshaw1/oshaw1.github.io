@@ -17,6 +17,29 @@ body {
   font-variation-settings: "wdth" 112.5;
 }
 
+.inconsolata-content {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 81;
+  font-size: 16px; /* Base font size */
+}
+
+/* Media query for 1440p resolution (2560 x 1440 pixels) */
+@media (max-width: 2560px) and (max-height: 1440px) {
+  .inconsolata-content {
+    font-size: 14px; /* Adjust font size for 1440p */
+  }
+}
+
+/* Media query for 1080p resolution (1920 x 1080 pixels) */
+@media (max-width: 1920px) and (max-height: 1080px) {
+  .inconsolata-content {
+    font-size: 12px; /* Adjust font size for 1080p */
+  }
+}
+
 .oooh-baby-regular {
   font-family: "Oooh Baby", cursive;
   font-weight: 400;
@@ -118,6 +141,20 @@ main {
   border-width: .3vh;
 }
 
+.card-button {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-button .card {
+  height: .3vh;
+}
+
+.card-button:hover .card {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 .card-content {
   display: none;
   position: absolute;
@@ -194,6 +231,18 @@ main {
   transition: opacity 0.3s ease;
 }
 
+.oval-container {
+  width: 25vh; /* adjust as needed */
+  height: 35vh; /* adjust as needed */
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.me-img {
+  width: 100%;
+  height: auto;
+}
+
 .social-icon .normal-icon {
   opacity: 1;
 }
@@ -208,4 +257,40 @@ main {
 
 .social-icon:hover .hover-icon {
   opacity: 1;
+}
+
+.github-button {
+  background-color: #FFFFFF;
+  border: 0;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none #D1D5DB solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: inline-block; /* Add this line */
+  align-self: flex-end;
+}
+
+.github-button:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.github-button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.github-button:focus-visible {
+  box-shadow: none;
 }
