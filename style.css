@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .content-container {
@@ -100,24 +101,25 @@ main {
   box-sizing: border-box;
 }
 
-.card-container {
-  display:flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-  position: relative;
-  margin-top: -1vw;
-  margin-left: -50px;
-  padding: 0 5%;
-}
-
 .card-container::-webkit-scrollbar {
   display: none;
 }
 
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+  position: relative;
+  margin-top: -1vw;
+  padding: 0 5vw;
+  max-height: calc(100vh - 200px); /* Adjust this value based on your header and footer heights */
+}
+
 .card-column {
-  flex: 0 0 300px;
+  flex: 0 0 30%; /* Adjust this value to control the maximum card width */
   margin-right: 20px;
   display: flex;
   flex-direction: column;
@@ -127,16 +129,16 @@ main {
 .card {
   background-color: #ffffff;
   border-style: solid;
-  border-width: .2vh;
+  border-width: 0.2vh;
   border-radius: 5px;
-  padding: 2vh; /* Adjusted to use viewport height */
-  margin-bottom: 2vh; /* Adjusted to use viewport height */
+  padding: 2vh;
+  margin-bottom: 2vh;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   position: relative;
   overflow: hidden;
+  flex: 1; /* Allow cards to grow and shrink based on available space */
 }
-
 .card:hover {
   border-color: var(--hover-color);
   box-shadow: 0 0 10px var(--hover-color);
