@@ -82,6 +82,8 @@ h1 {
   width: 100%;
 }
 
+/* adding a comment to get github to reload the css */
+
 main {
   padding: 20px 0;
   display: flex;
