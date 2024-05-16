@@ -82,19 +82,6 @@
       </div>
     </div>
   </main>
-
-  <script>
-    const cardContainer = document.querySelector('.card-container');
-    const scrollSpeed = 4; 
-
-    window.addEventListener('wheel', (e) => {
-    const cardContainer = document.querySelector('.card-container');
-
-    if (e.deltaY !== 0) {
-        e.preventDefault();
-        cardContainer.scrollLeft += e.deltaY * scrollSpeed;
-     }
-});
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

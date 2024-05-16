@@ -36,6 +36,8 @@ main {
   overflow-x: scroll;
   scroll-behavior: smooth;
   scrollbar-width: none;
+  position: relative;
+  padding: 0 5%;
 }
 
 .card-container::-webkit-scrollbar {
@@ -48,6 +50,7 @@ main {
   display: flex;
   flex-direction: column;
   min-height: 60vh;
+  transition: filter 0.3s ease;
 }
 
 .card {
