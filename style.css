@@ -102,6 +102,7 @@ main {
 .card {
   background-color: #ffffff;
   border-style: solid;
+  border-width: .2vh;
   border-radius: 5px;
   padding: 2vh; /* Adjusted to use viewport height */
   margin-bottom: 2vh; /* Adjusted to use viewport height */
@@ -114,6 +115,7 @@ main {
 .card:hover {
   border-color: var(--hover-color);
   box-shadow: 0 0 10px var(--hover-color);
+  border-width: .3vh;
 }
 
 .card-content {
