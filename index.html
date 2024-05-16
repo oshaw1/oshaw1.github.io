@@ -1,829 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-<!-- google font linking-->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-
-<!-- poppins google font -->
-   
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
-<!-- font awseome cdn linking-->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- bootstrap can linking-->
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
-
-<!-- style.css linking-->
-<link rel="stylesheet" href="style.css">
-
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>oshaw1.github.io</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@112.5,300&family=Oooh+Baby&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
-                                        <!-- navigation start -->
-
-<main class="main">
-   <header class="header">
-      <div class="wrap d-flex">
-          <div class="logo"><a href="">Portfo<span>lio.</span></a></div>
-             <nav class="menu">
-                  <ul>
-                      <li><a class="active" href="#home">Home</a></li>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#mh-service">Work</a></li>
-                      <li><a href="#skill">Skills</a></li>
-                      <li><a href="#mh-experience">Education</a></li>
-                      <li><a href="#projects">Projects</a></li>
-                      <li><a href="#contact">Contact</a></li>
+  <header>
+    <div class="header-content">
+      <h1 class="inconsolata-header">oshaw1.github.io</h1>
+    </div>
+    <div class="underbar"></div>
+  </header>
+  <div class="intro-text">
+    <h2 class="oooh-baby-regular">Hello im Owen</h2>
+    <p class="inconsolata-header">check out my work below...</p>
+  </div>
+  <div class="content-container">
+    <main>
+      <div class="padding-div">
+        <div class="card-container">
+          <div class="section-header inconsolata-header">About Me</div>
+          <div class="card-column">
+            <div class="card" style="height: 100%;">
+              <div class="card-front">
+                  <h2 class="inconsolata-header">Who am I?</h2>
+              </div>
+              <div class="card-back">
+                <div class="card-content">
+                  <p class="inconsolata-content">
+                    Hi im Owen...
+                    
+                    I'm a Graduate Software Engineer at Bosch Automotive Service Solutions UK, Passionate about all things technology.
+                  </p>
+                  <p class="inconsolata-content">
+                    I have a Bachelor of Applied Science in Software Engineering from Edge Hill University, where I learned the groundwork of software engineering. 
+                    I am proficient in Java, Go, and Python, and I have experience with Object-Oriented Programming, HTML, CSS, and AWS. 
+                    I am passionate about learning new technologies and improving my skills, and I hope to always be in a role that can challenge me and help me grow.</p>
+                    <div class="oval-container">
+                        <img class="me-img" src="images/me.jpg" alt="Your Image">
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-column">
+            <div class="card" style="height: 60%;">
+              <div class="card-front">
+                  <h2 class="inconsolata-header">Technical Skills / Knowledge</h2>
+              </div>
+              <div class="card-back">
+                <div class="card-content">
+                  <p class="inconsolata-content">I have worked with a variety of technologies over my education, work and personal life... The following are some I am proficient in</p>
+                  <ul class="tech-list">
+                    <li class="inconsolata-content">Programming Languages: Go, Java, Python</li>
+                    <li class="inconsolata-content">Web Development: React, HTML, CSS, Js</li>
+                    <li class="inconsolata-content">Databases: SQL, NoSql(MongoDB)</li>
+                    <li class="inconsolata-content">Cloud Technologies: AWS(EC2, IAM, CI/CD pipelines, Cloudwatch)</li>
+                    <li class="inconsolata-content">Devops: Docker, Jenkins, Git</li>
                   </ul>
-             </nav>
+                </div>
+              </div>
+            </div>
+            <a href="CV/Owen Shaw CV.pdf" target="_blank" class="card-button">
+                <div class="card" style="height: 40%;">
+                  <div class="card-front">
+                    <h2 class="inconsolata-header">CV</h2>
+                  </div>
+                </div>
+              </a>
+          </div>
+          <div class="section-header inconsolata-header">Projects</div>
+          <div class="card-column">
+            <div class="card" style="height: 100%;">
+              <div class="card-front">
+                <h2 class="inconsolata-header">SyncScribe</h2>
+              </div>
+              <div class="card-back">
+                <div class="card-content">
+                  <p class="inconsolata-content">SyncScribe is a cloud based collaberative asyncrinous note taking and storage application. 
+                    Written with a Go Backend, React frontend and Mongo DB for storage.
+                    SyncScribe uses CRDT's (Conflict free replicated data types) with a websocket to ensure collaberative sessions work seamlessly.
+                </p>
+                  <a href="https://github.com/oshaw1/SyncScribe" target="_blank" class="github-button" role="button">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-column">
+            <div class="card" style="height: 35%;">
+              <div class="card-front">
+                <h2 class="inconsolata-header">Portfolio Website</h2>
+              </div>
+              <div class="card-back">
+                <div class="card-content">
+                  <p class="inconsolata-content">The Website you are currently on! Wrote in HTML, CSS with a little Js</p>
+                  <a href="https://github.com/oshaw1/oshaw1.github.io" target="_blank" class="github-button" role="button">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="height: 65%;">
+              <div class="card-front">
+                <h2 class="inconsolata-header">Emotion Recognition AI</h2>
+              </div>
+              <div class="card-back">
+                <div class="card-content">
+                  <p class="inconsolata-content">I utilised deep learning techniques to build a neural network model for recognizing emotions from facial expressions. 
+                    I trained the model on a dataset that contained images of individuals with various emotional expressions and fine-tuned it to accurately predict emotions such as happiness, sadness, anger, fear, surprise, and neutral. 
+                    The end result was a robust model that could accurately classify emotions in real-time.</p>
+                <a href="https://github.com/oshaw1/Emotion-Detection" target="_blank" class="github-button" role="button">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section-header inconsolata-header">Work History / Education</div>
+          <div class="card-column">
+            <div class="card" style="height: 100%;">
+              <div class="card-front">
+                <h2 class="inconsolata-header">Graduate Software Engineer ~ Bosch Automotive</h2>
+                <p class="inconsolata-header">September 2023 - Current</p>
+              </div>
+              <div class="card-back">
+                <div class="card-content">
+                  <p class="inconsolata-content">day to day tasks involve working on, developing and testing software solutions for the automotive diagnostic sector.
+                    I collaborate with other engineers and project managers to deliver high-quality products that meet the industry standards and customer needs.
+                    Technologies utilised: Java, Go, AWS, TDD, OOP, Git, API tooling</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-column">
+            <div class="card" style="height: 70%;">
+              <div class="card-front">
+                <h2 class="inconsolata-header">Junior Technical Consultant ~ Ten10</h2>
+                <p class="inconsolata-header">May 2023 - August 2023</p>
+              </div>
+              <div class="card-back">
+                <div class="card-content">
+                  <p class="inconsolata-content">Recieved training covering a variety of technical subjects including over the course of three months:
+                    Software design principles, Software testing, Java development, Devops</p>
+                </div>
+              </div>
+            </div>
+            <div class="card" style="height: 30%;">
+                <div class="card-front">
+                  <h3 class="inconsolata-header">Bachelor of Science (Hons) in Software Engineering ~ Edgehill University</h3>
+                  <p class="inconsolata-header">October 2019 - July 2022</p>
+                </div>
+                <div class="card-back">
+                  <div class="card-content">
+                    <p class="inconsolata-content">Graduated with bachelor with Honours</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
       </div>
- 
-      <a href="javascript:void(0);" class="sidemenu-toggler">
-                <span></span>
-                <span></span>
-                <span></span>
+    </main>
+  </div>
+  <footer class="footer">
+    <p class="inconsolata-header">contact me via socials or email...</p>
+    <div class="social-images-container">
+      <a href="https://www.linkedin.com/in/owen-shaw-b32b821b8/" target="_blank" class="social-icon">
+        <img src="images/socials/linkedin-logo-grayscale.webp" alt="LinkedInLogo" class="normal-icon">
+        <img src="images/socials/linkedin-logo-color.png" alt="LinkedInLogo" class="hover-icon">
       </a>
-
-      <div class="sidemenu">
-          <a href="javascript:void(0) ;" class="close"></a>
-          <nav>
-              <ul>
-                      <li><a  href="">Home</a></li>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#mh-service">Work</a></li>
-                      <li><a href="#skill">Skills</a></li>
-                      <li><a href="#mh-experience">Education</a></li>
-                      <li><a href="#projects">Projects</a></li>
-                      <li><a href="#contact">Contact</a></li>
-              </ul>
-          </nav>
-          <footer>
-            <div class="social-icons d-flex">
-                <li><a class="linkedin" href="https://www.linkedin.com/in/owen-shaw-b32b821b8/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                <li><a class="Github" href="https://github.com/oshaw1" target="_blank"><i class="fa fa-github-square"></i></a></li>
-
-            </div>
-             
-          </footer>
-
-      </div>
-   </header>
-</main>
-
-                                           <!-- home page setup -->
-<br><br><br><br><br><br><br>
-
-<section Class="home container text-white">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="hero-text">
-                <span class="title">hello i'm</span><br>
-                <span class="name">Owen Shaw</span><br>
-                <div class="wrapper">
-                    <div class="static-txt">I'm a</div>
-                    <ul class="dynamic-txts">
-                      <li><span>Developer.</span></li>
-                      <li><span>Designer.</span></li>
-                      <li><span>Researcher.</span></li>
-                      <li><span>Enthusiast.</span></li>
-                    </ul>
-                  </div>
-                
-                
-                <div class="social-icons d-flex">
-                 <li><a class="linkedin" href="https://www.linkedin.com/in/owen-shaw-b32b821b8/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                 <li><a class="Github" href="https://github.com/oshaw1" target="_blank"><i class="fa fa-github-square"></i></a></li>
-                 <li><a class="emial" href="https://accounts.google.com/ServiceLogin/signinchooser?flowName=GlifWebSignIn&flowEntry=ServiceLogin"  target="o.shaw01942@gmail.com" ><i class="fa fa-envelope"></i></a></li>
-
-                </div>
-
-
-            </div>
-        </div>
-
-          <div class="col-md-6">
-                <div class="hero-img">
-                    <div class="img-border">
-                     <img src="./image/me.jpg" class="img-fluid" alt="">
-
-                    </div>
-                </div>
-
-            </div>
-
-    </div>
-</section>
-
-
-                                                  <!-- ABOUT page setup -->
-<br><br><br><br><br><br><br>
-
-      <section class="about" id="about">
-        <div class="header">
-            <h1> ABOUT ME</h1>
-         </div>
-         <br><br><br>
-
-          <div class="container">
-              <div class="row">
-                    <div class="col-md-6">
-                        <div class="hero1-img">
-                            <div class="imag-border">
-                                <img src="./image/me.jpg" class="img-fluid" alt="">
-           
-                            </div>
-                        </div>
-                      
-                    </div>
-                  <div class="col-md-5 text-white gap">
-                      <div class="facicon">
-                     
-                          <i class="fa fa-handshake-o" style="color:#ca3993"></i>
-                           <h2>Hello there!!</h2>
-                           
-                         </div>
-                      <div class="wrapper">
-                        <div class="static-txt">I'm a</div>
-                        <ul class="dynamic-txtss">
-                          <li><span>Developer.</span></li>
-                          <li><span>Designer.</span></li>
-                          <li><span>Researcher.</span></li>
-                          <li><span>Engineer.</span></li>
-                        </ul>
-                      </div>
-                      <p>
-                          I am a graduate Software Engineer 
-                          I am passionate about all things technology,
-                      </p>
-                      <br>
-                      <div class="tag1">
-                            <ul>
-                               <li><span> <i class="fa fa-heart" style="color:#df3112"></i>  Age : 22 </span></li>
-                               <li><span><i class="fa fa-graduation-cap" style="color:#c9960b"></i> University : Edgehill University</span></li>
-                               <br>
-                               <li><span><i class="fa fa-envelope" style="color:#2e71c9"></i> Email : o.shaw01942@gmail.com</span></li>
-                          </ul>
-                        </div>
-                            <br>  <br>  
-                      <div class="tag">
-                        <div class="header4">
-                            <h1>Skills</h1>
-                        </div><br>
-                          <ul>
-                              <li><span>html</span></li>
-                              <li><span>css</span></li>
-                              <li><span>Php</span></li>
-                              <li><span>java</span></li>
-                              <li><span>Python</span></li>
-                              <li><span>SQL</span></li>
-                              <li><span>C / C++ / C#</span></li>
-                              <li><span>javascript</span></li>
-                          </ul>
-                      </div>
-                      <br>
-                      <div class="download-button">
-                        <sup>Sorry CV not available for download as im not looking for a role at the moment, be sure to drop me a connection on linkedin!</sup>
-                          <a href="" class="btn btn-danger">Download CV <i class="fa fa-download"  style="color:#ece6dc" ></i></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-       </section>
-
-                                              <!-- Service work page setup -->
-<br><br><br><br><br><br><br>
-
-
-<section class="mh-service text-white" id ="mh-service">
-    <div class="header">
-        <h1> WORK</h1>
-    </div>
-         <div class="tagline">
-             <div class="col-sm-12 text-center">
-                <h3><I>----I <span>like</span> to do----</I></h3>
-              </div>
-         </div>
-    <div class="container">
-        <div class="row">
-            
-             <br><br>
-                      <div class="col-sm-4">
-                          <div class="mh-service-item">
-                              <i class="fa fa-bullseye purple-color"></i>
-                              <h3>UI DESIGN</h3>
-                              <p>
-                                User interface design or user interface engineering 
-                                is the design of user interfaces for machines and software, 
-                                such as computers, home appliances, mobile devices, and
-                                 other electronic devices, with the focus on maximizing
-                                  usability and the user experience.
-                             </p>
-                          </div>
-                      </div>
-
-
-                      <div class="col-sm-4">
-                        <div class="mh-service-item">
-                            <i class="fa fa-code iron-color"></i>
-                            <h3>Web Development</h3>
-                            <p>
-                                Front-end web development is the development of the graphical
-                                 user interface of a website, through the use of HTML, CSS, 
-                                 and JavaScript, so that users can view and interact with that website.
-                           </p>
-                        </div>
-                    </div>
-
-
-                    <div class="col-sm-4">
-                        <div class="mh-service-item">
-                            <i class="fa fa-object-ungroup sky-color"></i>
-                            <h3>App Development</h3>
-                            <p>
-                                As a student in a university module on mobile app development, I was tasked with creating an Android app from scratch. 
-                                The process began with learning the basics of Android development, including the layout of an Android project and the use of Android Studio as the primary development environment.
-                           </p>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
-<br><br>
-
-    <div class="container">
-        <div class="row">
-                      <div class="col-sm-4">
-                          <div class="mh-service-item">
-                              <i class="fa fa-fire golden-color" style="color:#ec8f03"></i>
-                              <h3>Machine Learning</h3>
-                              <p>
-                                I have a passion for machine learning and AI because I find the field to be endlessly fascinating and constantly evolving.
-                                I enjoy learning about the latest breakthroughs and advancements in the field, 
-                                and I find the potential applications to be both exciting and limitless. 
-                                I also enjoy the challenge of solving complex problems using machine learning techniques, 
-                                and the satisfaction of seeing my models improve over time.
-                             </p>
-                          </div>
-                      </div>
-
-
-                
-
-
-                    <div class="col-sm-4">
-                        <div class="mh-service-item">
-                            <i class="fa fa-magic" style="color:#1dbd08"></i>
-                            <h3> Hardware Enthusiast</h3>
-                            <p>
-                                I have a passion for computer hardware because the technology is always advancing and there is always something new to learn.
-                                I find the inner workings of a computer and how it processes information to be fascinating. 
-                                I also appreciate the challenge of troubleshooting and diagnosing hardware issues, and the satisfaction of finding a solution. 
-                           </p>
-                        </div>
-                    </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
- <!--
-/**
-                                                                 *todo:-  Skill 
-                                                       *! SECTION SETUP STARTS FROM HERE...
-*/
-
- -->
-<br><br><br><br><br><br><br>
-
-  <section class="skill" id="skill">
-
-                                                 
-<!--
-
- /**
-                                         *todo:- testing Skill  SECTION SETUP STARTS FROM HERE...
- */
-                                                  
--->
-
-      <section class="testing1" >
-        <div class="inner">
-                   <div class="header">
-                       <h1> Technical Skills</h1>
-                    </div>
-
-               <div class="container">
-                <div class="skill-box">
-                    <div class="skill-title">
-                           <div class="img">
-                               <img src="./image/jva.png" class="skill-icon">
-                            </div>
-                           <h3>Java</h3>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                           <div class="img">
-                               <img src="./image/golang.jpg" class="skill-icon">
-                            </div>
-                           <h3>Golang</h3>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                           <div class="img">
-                               <img src="./image/java.png" class="skill-icon">
-                            </div>
-                           <h3>JavaScript</h3>
-                    </div>
-                </div>
-                 <div class="skill-box">
-                         <div class="skill-title">
-                                <div class="img">
-                                    <img src="./image/html.png" class="skill-icon">
-                                 </div>
-                                <h3>HTML5</h3>
-                         </div>
-                     </div>
-
-                     <div class="skill-box">
-                        <div class="skill-title">
-                               <div class="img">
-                                   <img src="./image/css.png" class="skill-icon">
-                                </div>
-                               <h3>CSs</h3>
-                        </div>
-                    </div>
-
-                     
-                    <div class="skill-box">
-                        <div class="skill-title">
-                               <div class="img">
-                                   <img src="./image/python1.png" class="skill-icon">
-                                </div>
-                               <h3>Python</h3>
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <div class="skill-title">
-                               <div class="img">
-                                   <img src="./image/machine-learning.png" class="skill-icon">
-                                </div>
-                               <h3>Machine Learning</h3>
-                        </div>
-                    </div>
-
-
-                    <div class="skill-box">
-                        <div class="skill-title">
-                               <div class="img">
-                                   <img src="./image/csharp.png" class="skill-icon">
-                                </div>
-                               <h3>C#</h3>
-                        </div>
-                    </div>
-
-                    <div class="skill-box">
-                        <div class="skill-title">
-                               <div class="img">
-                                   <img src="./image/gcloud.png" class="skill-icon">
-                                </div>
-                               <h3>Cloud</h3>
-                        </div>
-                    </div>
-
-                 </div>
-          </div>
-    
-  </section>
-
-
-  <!--
-
-  /**
-                                                     *!:- TECHNICAL skill page setup end here ...
-*/
-  
-  -->
-
-  <!--
-                                         
- /**
-                                         *todo:- Professional skill  SECTION SETUP STARTS FROM HERE...
- */
-
-  -->
-                                         
-<br><br><br><br><br><br>
-<section class="testing" id="testing">
-    <div class="a">
-        <div class="header">
-            <h1> Professional Skills</h1>
-         </div>		
-  		   
-    <ul class="cards">
-<li>
-<a href="" class="card">
-  <img src="./image/teamwork.png" class="card__image" alt="" />
-  <div class="card__overlay">
-    <div class="card__header">
-      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-      
-      
-      <div class="icon" style="font-size: 2rem;"><i class="fa fa-users" style="color:#dbae18"></i></div>
-
-      <div class="card__header-text">
-        <h3 class="card__title"> TEAM WORK </h3>       
+      <a href="https://github.com/oshaw1" target="_blank" class="social-icon">
+        <img src="images/socials/github-logo-grayscale.png" alt="GithubLogo" class="normal-icon">
+        <img src="images/socials/github-logo-color.png" alt="GithubLogo" class="hover-icon">
+      </a>
+      <div class="social-icon" id="emailLogo">
+        <img src="images/socials/email-logo-grayscale.png" alt="EmailLogo" class="normal-icon">
+        <img src="images/socials/email-logo-color.png" alt="EmailLogo" class="hover-icon">
       </div>
     </div>
-</div>
-    <p class="card__description">I have interpersonal skills, or skills that help them effectively collaborate.
-         Professionals with teamwork skills understand how to accomplish tasks.</p>
-  
-</a>      
-</li>
-<li>
-<a href="" class="card">
-  <img src="./image/critical.jpg" class="card__image" alt="" />
-  <div class="card__overlay">        
-    <div class="card__header">
-      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
-
-      <div class="icon" style="font-size: 2rem;"><i class="fa fa-lightbulb-o" style="color:#dbae18"></i></div>
-
-      <div class="card__header-text">
-        <h3 class="card__title">Critical Thinking</h3>			
-      </div>
-    </div>
-</div>
-    <p class="card__description">I'm adaptable to unpredictabile environments. 
-        I will respond proactively to new or challenging circumstances and work great under pressure.</p>
-  
-</a>
-</li>
-<li>
-<a href="" class="card">
-  <img src="./image/communication.jpeg" class="card__image" alt="" />
-  <div class="card__overlay">
-    <div class="card__header">
-      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
-
-      <div class="icon" style="font-size:2rem;"><i class="fa fa-podcast" style="color:#dbae18"></i></div>
-      
-      <div class="card__header-text">
-        <h3 class="card__title">Team-Player</h3>
-                  
-		
-      </div>
-      </div>
-    </div>
-    <p class="card__description">I'm skilled at communication skill & understand how to efficiently
-         deliver information, exchange ideas and pay attention to the other person's message. </p>
-  
-</a>
-</li>  
-  <li>
-     <a href="" class="card">
-              <img src="./image/leadership.jpeg" class="card__image" alt="" />
-                     <div class="card__overlay">
-                          <div class="card__header">
-                             <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg> 
-
-                                 <div class="icon" style="font-size: 2rem;"><i class="fa fa-universal-access" style="color:#dbae18"></i></div>
-
-                              <div class="card__header-text">
-                                  <h3 class="card__title">Leadership</h3>
-                              </div>
-                         </div>          
-                    </div>
-             <p class="card__description">I can motivate, instruct and offer guidance,I'm confident in my abilities to help 
-                 others work, collaborate, problem-solve or succeed.</p>
-          
-         </a>
-   </li>    
-   </ul>
-</div>
-</section>	
-</section>
-
-
-                                      
-<!--
-/**
-                                         *!:- PRofessional PAGE SECTION SETUP END HERE...
- */
--->
-
-
-<!--
-
- /**
-                                         *todo:- EDUCATION PAGE SECTION SETUP STARTS FROM HERE...
- */
-
--->
-                                                  
-<br><br><br><br><br><br>
-  
-<section class="mh-experience" id="mh-experience">
-    <div class="header">
-        <h1>Education & Employment</h1>
-     </div>		
-     <br><br><br>
-    <div class="container">
-        <div class="row">
-            <div class="col-smd-12 col-md-10">
-                <div class="mh-education">
-                    <h3>Education</h3>
-                    <div class="mh-education-details">
-                      <div class="mh-education-item">
-                        <h4>Bachelor of Science (Hons) in Software Engineering ~ Edgehill University</h4>
-                        <div class="mh-eduyear">2019-2022</div>
-                          <p>
-                           <sup></sup> Graduated <BR>
-                           
-                           
-                          </p>
-                       </div>
-                      <br>
-                      <div class="mh-education-item">
-                         <h4>College ~ St John Rigby Sixth Form</h4>
-                         <div class="mh-eduyear">2017-2019</div>
-                             <p>
-                              >> Completed with : D*D*D*
-                            </p>
-                        </div>
-                       <br>
-
-                       <div class="mh-education-item">
-                          <h4>Secondary School ~ St Edmund Arrowsmith Catholic High School </h4>
-                         <div class="mh-eduyear">2017-2018</div>
-                             <p>
-                                >> completed with: 7 GCSE B-C
-                              </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-        </div>
-        <div class="row">
-            <div class="col-smd-12 col-md-10">
-                <div class="mh-education">
-                    <h3>Employment</h3>
-                    <div class="mh-education-details">
-                      <div class="mh-education-item">
-                        <h4>Graduate Software Engineer ~ Bosch</h4>
-                        <div class="mh-eduyear">September 2023 - Current</div>
-                          <p>
-                           <sup></sup>day to day tasks involve working on, developing and testing software solutions for the automotive diagnostic sector.  
-                           <BR>
-                            <sup></sup>I collaborate with other engineers and project managers to deliver high-quality products that meet the industry standards and customer needs.
-                            <BR>
-                            <sup></sup>Technologies utilised: Java, AWS, TDD, OOP, Git <BR>
-                          </p>
-                       </div>
-                       <br>
-                       <div class="mh-education-item">
-                        <h4>Junior Technical Consultant ~ Ten10</h4>
-                        <div class="mh-eduyear">May 2023 - August 2023</div>
-                          <p>
-                           <sup></sup>Recieved training covering a variety of technical subjects including: <BR>
-                           <sup></sup>Software design principles, Software testing, Java development, Devops<BR>
-                          </p>
-                       </div>
-                       <br>
-                       <div class="mh-education-item">
-                        <h4></h4>
-                        <div class="mh-eduyear"></div>
-                          <p>
-                           <sup></sup><BR>
-                          </p>
-                       </div>
-                    </div>
-                </div>
-
-
-        </div>
-    </div>
-</section>
-
-
-<!--
-
-/**
-                                                            *!:- EDUCATION PAGE SECTION SETUP END HERE...
-*/
-
- /**
-                                                                     *?Page section setup 
-                                                    
- */
--->
-
-
-<br><br><br><br><br><br>
-
-
-   <!--                                          
-                                                      
-/**
-                                                       *todo:- PRoject PAGE SECTION SETUP STARTS FROM HERE...
-*/
-
-   --> 
-
- 
-<section class="projects" id="projects" >
-        <div class="header">
-            <h1> PROJECTS</h1>
-         </div>	
-     <br><br>   
-        <div class="wrapper">
-             <div class="card0">
-                 <img src="./image/emotion.jpg" />
-                   <div class="info">
-                    <h1>Emotion Recognition</h1>
-                    <p>I utilized deep learning techniques to build a neural network model for recognizing emotions from facial expressions. 
-                        I trained the model on a dataset that contained images of individuals with various emotional expressions and fine-tuned it to accurately predict emotions such as 
-                        happiness, sadness, anger, fear, surprise, and neutral. 
-                        The end result was a robust model that could accurately classify emotions in real-time, 
-                        and could have potential applications in fields such as psychology, human-computer interaction, and mental health.</p>
-                    <a href="https://github.com/oshaw1/Emotion-Detection" class="btn">GitHub</a>
-                    </div>
-                </div>
-                
-                  <div class="card0">
-                 <img src=".\image\Rpi.avif" />
-                   <div class="info">
-                    <h1>Embedded systems</h1>
-                    <p>In an embedded systems module, I used a Raspberry Pi to create a range of embedded systems using various different hardware components and sensors. 
-                        One of the projects I worked on was a home automation system, which used a Raspberry Pi to control various devices such as lights and appliances. 
-                        I connected sensors such as motion detectors and temperature sensors to the Raspberry Pi, and wrote code to enable the system to respond to sensor inputs by turning devices on or off.
-                        Another project was a weather monitoring system, where I interfaced a range of sensors such as temperature, humidity, and barometric pressure sensors to the Raspberry Pi. 
-                        I wrote code to collect data from the sensors, and then used that data to display real-time weather information on a small display.</p>
-                    <a href="https://github.com/oshaw1/Embedded-systems-task" class="btn">GitHub</a>
-                    </div>
-                </div>
-                  <div class="card0">
-                 <img src="./image/SyncScribeLogo.webp">
-                   <div class="info">
-                    <h1>SyncScribe</h1>
-                    <p>SyncScribe is an innovative, cloud-hosted application designed to streamline the note-taking process. 
-                        Built with a React frontend and a Go backend, it leverages AWS Elastic Beanstalk for robust and scalable hosting, and AWS DynamoDB for efficient data management. 
-                        The app provides an intuitive user interface for creating, managing, and retrieving notes, making it ideal for individuals seeking a reliable digital note-taking solution. 
-                        Its integration with AWS services ensures high availability and seamless performance, catering to users who require access to their notes across various devices and platforms. 
-                        SyncScribe stands out for its user-friendly design, fast response times, and secure data handling, positioning it as a preferred choice for modern note-taking needs.</p>
-                    <a href="https://github.com/oshaw1/SyncScribe" class="btn">GitHub</a>
-    
-                    </div>
-                </div>
-                <div class="card0">
-                    <img src="./image/Text.jpg">
-                      <div class="info">
-                       <h1>C# OCR</h1>
-                       <p>This project is a simple text recognition application that uses the Tesseract OCR engine to extract text from images. 
-                   The program prompts the user to select an image file and then processes the image using Tesseract, 
-                   which attempts to recognize any text within the image. The recognized text is then displayed on the console.
-                   This project is a good example of how to use Tesseract in a C# application, and can be used as a starting point for more complex OCR projects. 
-                   It demonstrates the ability to process images and extract text programmatically, 
-                   which could be useful in various industries such as document processing, data entry, and information retrieval. </p>
-                       <a href="https://github.com/oshaw1/OCR-Csharp" class="btn">GitHub</a>
-       
-                       </div>
-                   </div>
-         </div>
-     </section>
-
-    <br><br>
-
-<section class="contact" id="contact">
-    <div class="content">
-            <h1> Contact Me</h1>
-        
-        <div class="tagline1">
-           <p><I>---- Thank You for visiting my <span> Personal Portfolio</span> . Connect with me Over Socials ----</I></p>
-        </div>
-    </div>
-    <br><br>
-    <div class= "container">
-        <div class="contactInfo">
-            <div class="box">
-                 <div class="icon"><i class="fa fa-user-circle-o" style="color:#ec8f03"></i></div>
-                    <div class="text">
-                     <h3>About</h3>
-                     <p>I am Owen Shaw,<br>Software Engineer,<br>at Robert Bosch ltd</p>
-                    </div>
-              </div>
-              <div class="box">
-                <div class="icon"><i class="fa fa-phone-square" style="color:#ec8f03"></i></div>
-                   <div class="text">
-                    <h3>Phone</h3>
-                    <p>07742 677297</p>
-                   </div>
-             </div>
-             <div class="box">
-                <div class="icon"><i class="fa fa-envelope" style="color:#ec8f03"></i></div>
-                   <div class="text">
-                    <h3>Email</h3>
-                    <p>o.shaw01942@gmail.com</p>
-                   </div>
-             </div>
-      
-          </div>
-
-    </div>
-</section>
-
-
-<!--
-  /**
-                                                         *!:- CONTACT PAGE SECTION SETUP END HERE...
- */ 
-
-                                                  
- /**
-                                                           *todo:- Footer SECTION SETUP STARTS FROM HERE...
- */
--->
-
-                                       
-
-
-<footer>
-    <div class="footer-1">
-      <div class="content">
-           <div class="left box">
-                <div class="upper">
-                 <div class="topic">About Me</div>
-                  <p>Thank You for visiting my Portfolio . Connect with me Over Socials. Projects will be updated soon.
-                       This Portfolio is Built by using HTML,CSS, and also JavaScript along with creative CSS Animations and Effects.</p>
-                </div>
-               <div class="lower">
-                     <div class="topic">Contact Me</div>
-                         <div class="email">
-                             <a href="#"><i class="fa fa-envelope"></i>o.shaw01942@gmail.com</a>
-                           </div>
-                 </div>
-             </div>
-                    <div class="right box">
-                         <div class="topic">Feedback</div>
-                             <form action="#">
-                                 <input type="text" placeholder="Enter your feedback">
-                                 <input type="submit" name="" value="Send">
-                                     <div class="media-icons">
-
-                                         <a class="linkedin" href="https://www.linkedin.com/in/owen-shaw-b32b821b8/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                         <a class="Github" href="https://github.com/oshaw1" target="_blank"><i class="fa fa-github-square"></i></a>
-                                     </div>
-                             </form>
-                            </div>
-                         </div>
-        </div>       
-
-     </footer>
-                                                     
-
-     <!--
-/**
-                                                            *!:- Footer SECTION SETUP End HEre...
- */
-
-
-  /**
-                                                                 *? JAVASCRIPT LINKING ...
- */
-
-     -->
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script> 
-<script src = "circle-progress.js"></script>    
-<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="function.js"></script>
- 
- 
-
-
-
-
-
+    <div id="copyMessage" class="copy-message"></div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
