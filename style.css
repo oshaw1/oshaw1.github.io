@@ -298,3 +298,22 @@ main {
 .github-button:focus-visible {
   box-shadow: none;
 }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .card-container {
+    /* Adjust styles for high-density displays */
+    transform: scale(0.8); /* Adjust the scale factor as needed */
+    transform-origin: top left;
+  }
+
+  .card-column {
+    /* Adjust styles for high-density displays */
+    flex: 0 0 25%; /* Adjust the maximum card width */
+  }
+
+  .card {
+    /* Adjust styles for high-density displays */
+    padding: 1.5vh; /* Adjust padding for better legibility */
+    margin-bottom: 1.5vh;
+  }
+}
