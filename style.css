@@ -39,6 +39,9 @@ body {
   .inconsolata-content {
     font-size: 12px;
   }
+  .card{
+    transform: scale(0.8);
+  }
 }
 /* adding comment since gh wierd about css re-rendering */
 .oooh-baby-regular {
