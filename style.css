@@ -335,14 +335,3 @@ main {
   text-align: center;
   padding-top: 15vh;
 }
-
-@media (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 2) {
-  body {
-    zoom: 0.8; 
-  }
-}
-
-@viewport {
-  zoom: 1;
-  width: device-width;
-}
