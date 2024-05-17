@@ -57,7 +57,7 @@ body {
     border: #000000;
   }
   .oval-container{
-    margin-top: -2px;
+    scale: .8;
   }
 }
 
