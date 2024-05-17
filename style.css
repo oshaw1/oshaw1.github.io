@@ -54,6 +54,9 @@ body {
   .card-container {
     scale: 1.2;
   }
+  .me-img{
+    scale: .8;
+  }
 }
 
 /* adding comment since gh wierd about css re-rendering */
