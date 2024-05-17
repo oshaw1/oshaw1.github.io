@@ -49,6 +49,13 @@ body {
     scale: 80%;
   }
 }
+
+@media (min-resolution: 192dpi) {
+  .card-container {
+    scale: 1.2;
+  }
+}
+
 /* adding comment since gh wierd about css re-rendering */
 .oooh-baby-regular {
   font-family: "Oooh Baby", cursive;
