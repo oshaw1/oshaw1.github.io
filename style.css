@@ -88,7 +88,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  transform: scale(1.15);
   transform-origin: top left;
 }
 
@@ -212,7 +211,7 @@ main {
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  padding: 2vh; /* Adjusted to use viewport height */
+  padding-bottom: 2vh; /* Adjusted to use viewport height */
   text-align: center;
 }
 
@@ -220,7 +219,8 @@ main {
 .social-images-container {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 1vh;
+  margin-left: -1vh;
 }
 
 .social-images-container img {
@@ -294,9 +294,6 @@ main {
   border-radius: 0.5rem;
   box-sizing: border-box;
   color: #111827;
-  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.875rem;
-  font-weight: 600;
   line-height: 1.25rem;
   padding: 0.75rem 1rem;
   text-align: center;
@@ -304,10 +301,8 @@ main {
   text-decoration-thickness: auto;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   cursor: pointer;
-  user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
-  display: inline-block; /* Add this line */
+  display: inline-block; 
   align-self: flex-end;
 }
 
@@ -322,6 +317,13 @@ main {
 
 .github-button:focus-visible {
   box-shadow: none;
+}
+
+.inprogress-container {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 15vh;
 }
 
 @media (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 2) {
