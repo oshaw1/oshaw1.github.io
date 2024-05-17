@@ -53,9 +53,8 @@ body {
 @media (pixel-ratio: 1) {
   .card-container {
     scale: 1.2;
-  }
-  .inconsolata-content {
-    font-size:  10px;
+    border-style: solid;
+    border: #000000;
   }
   .oval-container{
     margin-top: -2px;
