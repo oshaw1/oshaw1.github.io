@@ -57,6 +57,9 @@ body {
   .inconsolata-content {
     font-size:  10px;
   }
+  .oval-container{
+    margin-top: -2px;
+  }
 }
 
 /* adding comment since gh wierd about css re-rendering */
