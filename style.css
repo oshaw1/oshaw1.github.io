@@ -48,17 +48,14 @@ body {
   .github-button{
     scale: 80%;
   }
-  .oval-container{
-    scale: .8;
-  }
 }
 
 @media (pixel-ratio: 1) {
   .card-container {
     scale: 1.2;
   }
-  .oval-container{
-    scale: .8;
+  .inconsolata-content {
+    font-size:  10px;
   }
 }
 
