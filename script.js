@@ -1,42 +1,41 @@
 const cardContainer = document.querySelector('.card-container');
 const cardColumns = document.querySelectorAll('.card-column');
-const scrollSpeed = 2; // Adjust this value to control the scroll speed
+const scrollSpeed = 2.5;
 
 const handleScroll = () => {
   const containerRect = cardContainer.getBoundingClientRect();
-  const containerWidth = containerRect.width / 1.15; // Adjust for scaling
-  const containerLeft = containerRect.left / 1.15; // Adjust for scaling
-  const containerRight = containerRect.right / 1.15; // Adjust for scaling
+  const containerWidth = containerRect.width / 1.15; 
+  const containerLeft = containerRect.left / 1.15; 
+  const containerRight = containerRect.right / 1.15; 
 
   cardColumns.forEach((column) => {
     const columnRect = column.getBoundingClientRect();
-    const columnLeft = columnRect.left / 1.15; // Adjust for scaling
-    const columnRight = columnRect.right / 1.15; // Adjust for scaling
+    const columnLeft = columnRect.left / 1.15; 
+    const columnRight = columnRect.right / 1.15; 
 
     const isPartiallyVisible =
       (columnLeft < containerLeft && columnRight > containerLeft) ||
       (columnLeft < containerRight && columnRight > containerRight);
 
     if (isPartiallyVisible) {
-      column.style.filter = 'blur(10px)'; // Apply blur effect
+      column.style.filter = 'blur(10px)'; 
     } else {
-      column.style.filter = 'none'; // Remove blur effect
+      column.style.filter = 'none'; 
     }
   });
 };
 
 const handleWheel = (e) => {
-  if (e.deltaY !== 0) {
+  if (e.deltaY !== 0 || e.deltaX !== 0) {
     e.preventDefault();
-    cardContainer.scrollLeft += e.deltaY * scrollSpeed / 1.15; // Adjust for scaling
-    handleScroll(); // Call handleScroll after scrolling
+    cardContainer.scrollLeft += (e.deltaY + e.deltaX) * scrollSpeed / 1.15; 
+    handleScroll(); 
   }
 };
 
 window.addEventListener('wheel', handleWheel);
 window.addEventListener('resize', handleScroll);
-handleScroll(); // Call the function initially
-
+handleScroll(); 
 const emailLogo = document.getElementById('emailLogo');
 const copyMessage = document.getElementById('copyMessage');
 
