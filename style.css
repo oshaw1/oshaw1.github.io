@@ -87,7 +87,7 @@ main {
   padding: 20px 0;
   display: flex;
   justify-content: center;
-  scale: 1.2;
+  transform: scale(1.1);
   align-items: flex-start;
   transform-origin: top left;
 }
