@@ -55,7 +55,7 @@ body {
     scale: 1.2;
   }
   .inconsolata-content {
-    font-size:  1.1vh;
+    font-size:  1vh;
   }
 }
 
@@ -208,6 +208,8 @@ main {
   background-color: #f9f9f9;
   padding: 1vh;
   overflow-y: hidden;
+  box-sizing: border-box;
+  margin-bottom: -3vh;
   overflow-x: hidden;
 }
 
@@ -284,6 +286,7 @@ main {
   width: 25vh; /* adjust as needed */
   height: 35vh; /* adjust as needed */
   overflow: hidden;
+  position: absolute;
   border-radius: 50%;
 }
 
