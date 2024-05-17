@@ -37,7 +37,7 @@ body {
 /* Media query for 1080p resolution (1920 x 1080 pixels) */
 @media (max-width: 1920px) and (max-height: 1080px) {
   .inconsolata-content {
-    font-size:  1.3262vh;
+    font-size:  1.2vh;
   }
   .section-header{
     font-size: 80%;
