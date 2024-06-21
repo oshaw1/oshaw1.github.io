@@ -56,6 +56,33 @@ body {
   }
 }
 
+.pdf-container {
+  display: absolute;
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  box-shadow: #000000 0px 0px 10px;
+  border-style: solid;
+  border-width: .1vh;
+  border-radius: 5px;
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Inconsolata', monospace;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
 /* adding comment since gh wierd about css re-rendering */
 .oooh-baby-regular {
   font-family: "Oooh Baby", cursive;
@@ -341,8 +368,6 @@ main {
 }
 
 .inprogress-container {
-  align-items: center;
-  align-content: center;
   text-align: center;
-  padding-top: 15vh;
+  padding-top: 5vh;
 }
