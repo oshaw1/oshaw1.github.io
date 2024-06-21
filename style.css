@@ -35,16 +35,16 @@ body {
 
 @media (max-width: 1920px) and (max-height: 1080px) {
   .inconsolata-content {
-    font-size: calc(16px * (2560 / 1920));
+    font-size:  1.2vh
   }
   .section-header{
-    font-size: calc(80% * (2560 / 1920));
+    font-size:  80% 
   }
   .card-front{
-    font-size: calc(90% * (2560 / 1920));
+    font-size:  80% 
   }
   .github-button{
-    scale: calc(80% * (2560 / 1920));
+    scale: 80% 
   }
 }
 @media (pixel-ratio: 1) {
