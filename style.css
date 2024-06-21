@@ -55,10 +55,11 @@ body {
     font-size:  1vh;
   }
 }
+/* adding comment since gh wierd about css re-rendering */
 
 .pdf-container {
   display: absolute;
-  margin: auto;
+  margin: 20px auto;
   width: 60%;
   height: 100%;
   box-shadow: #000000 0px 0px 10px;
@@ -66,6 +67,7 @@ body {
   border-width: .1vh;
   border-radius: 5px;
 }
+/* adding comment since gh wierd about css re-rendering */
 
 .download-button {
   display: inline-block;
@@ -83,7 +85,6 @@ body {
   background-color: #45a049;
 }
 
-/* adding comment since gh wierd about css re-rendering */
 .oooh-baby-regular {
   font-family: "Oooh Baby", cursive;
   font-weight: 400;
