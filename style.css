@@ -46,6 +46,15 @@ body {
   .github-button{
     scale: 80% 
   }
+  .pdf-container{
+    width: 48%; /* Reduced from 60% to 48% (60% * 0.8) */
+    height: 64vh; /* Using viewport height units */
+    max-height: 640px; /* 80% of 800px (typical height at 1080p) */
+  }
+  .gopherimg{
+    scale: 80%;
+    margin-top: -3vh;
+  }
 }
 @media (pixel-ratio: 1) {
   .card-container {
@@ -56,9 +65,12 @@ body {
   }
 }
 /* adding comment since gh wierd about css re-rendering */
-
+.embed-cv {
+  width: 100%;
+  height: 65vh;
+}
 .pdf-container {
-  display: absolute;
+  display: block;
   margin: 20px auto;
   width: 60%;
   height: 100%;
