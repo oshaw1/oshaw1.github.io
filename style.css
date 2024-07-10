@@ -572,7 +572,7 @@ main {
   .footer{
     scale: .60;
     margin-top: -2vh;
-    width: 100%;
+    float: bottom;
   }
   .intro-text{
     scale: .60;
