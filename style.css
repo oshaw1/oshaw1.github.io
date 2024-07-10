@@ -576,6 +576,11 @@ main {
   }
   .footer{
     scale: .60;
+    margin-bottom: -1vh;
+    width: 100%;
+  }
+  .intro-text{
+    scale: .60;
     width: 100%;
   }
 }
