@@ -35,26 +35,26 @@ body {
 
 @media (max-width: 1920px) and (max-height: 1080px) {
   .inconsolata-content {
-    font-size:  65% 
+    font-size: 65%;
   }
   .inconsolata-header {
-    font-size:  2vh 
+    font-size: 2vh;
   }
-  .section-header{
-    font-size:  80% 
+  .section-header {
+    font-size: 80%;
   }
-  .card-front{
-    font-size:  80% 
+  .card-front {
+    font-size: 80%;
   }
-  .github-button{
-    scale: 80% 
+  .github-button {
+    scale: 80%;
   }
-  .pdf-container{
+  .pdf-container {
     width: 48%; /* Reduced from 60% to 48% (60% * 0.8) */
     height: 64vh; /* Using viewport height units */
     max-height: 640px; /* 80% of 800px (typical height at 1080p) */
   }
-  .gopherimg{
+  .gopherimg {
     scale: 80%;
     margin-top: -3vh;
   }
@@ -64,7 +64,7 @@ body {
     scale: 1.2;
   }
   .inconsolata-content {
-    font-size:  1vh;
+    font-size: 1vh;
   }
 }
 /* adding comment since gh wierd about css re-rendering */
@@ -79,7 +79,7 @@ body {
   height: 100%;
   box-shadow: #000000 0px 0px 10px;
   border-style: solid;
-  border-width: .1vh;
+  border-width: 0.1vh;
   border-radius: 5px;
 }
 /* adding comment since gh wierd about css re-rendering */
@@ -88,11 +88,11 @@ body {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 20px;
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   transition: background-color 0.3s;
 }
 
@@ -105,7 +105,7 @@ body {
   font-weight: 400;
   font-style: normal;
   margin-top: -1vw;
-  margin-bottom: -.5vw;
+  margin-bottom: -0.5vw;
   font-size: 2vw;
   color: cadetblue;
 }
@@ -171,11 +171,11 @@ main {
   position: relative;
   margin-top: -1vw;
   padding: 0 5vw;
-  max-height: calc(100vh - 200px); 
+  max-height: calc(100vh - 200px);
 }
 
 .card-back {
-  flex: 1; 
+  flex: 1;
   overflow-x: auto;
 }
 
@@ -191,7 +191,7 @@ main {
 .card {
   background-color: #ffffff;
   border-style: solid;
-  border-width: .2vh;
+  border-width: 0.2vh;
   border-radius: 5px;
   padding: 2vh;
   margin-bottom: 2vh;
@@ -206,7 +206,7 @@ main {
 .card:hover {
   border-color: var(--hover-color);
   box-shadow: 0 0 10px var(--hover-color);
-  border-width: .3vh;
+  border-width: 0.3vh;
 }
 
 .card-button {
@@ -216,7 +216,7 @@ main {
 }
 
 .card-button .card {
-  height: .3vh;
+  height: 0.3vh;
 }
 
 .card-button:hover .card {
@@ -276,7 +276,6 @@ main {
   padding-bottom: 2vh; /* Adjusted to use viewport height */
   text-align: center;
 }
-
 
 .social-images-container {
   display: flex;
@@ -353,7 +352,7 @@ main {
 }
 
 .github-button {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 0;
   border-radius: 0.5rem;
   box-sizing: border-box;
@@ -361,12 +360,12 @@ main {
   line-height: 1.25rem;
   padding: 0.75rem 1rem;
   text-align: center;
-  text-decoration: none #D1D5DB solid;
+  text-decoration: none #d1d5db solid;
   text-decoration-thickness: auto;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   cursor: pointer;
   touch-action: manipulation;
-  display: inline-block; 
+  display: inline-block;
   align-self: flex-end;
 }
 
@@ -388,7 +387,7 @@ main {
   padding-top: 5vh;
 }
 
-@media (hover: none) and (pointer: coarse)  {
+@media (hover: none) and (pointer: coarse) {
   body {
     overflow-y: auto;
   }
@@ -404,7 +403,7 @@ main {
     padding: 0;
     max-height: none;
     overflow-y: visible;
-    height:60vh;
+    height: 60vh;
     width: 100%;
   }
 
@@ -412,7 +411,7 @@ main {
     flex: 0 0 80%;
     width: 80%;
     margin-right: 0;
-    margin-bottom: 1vh; 
+    margin-bottom: 1vh;
     min-height: auto;
     height: auto;
   }
@@ -474,7 +473,7 @@ main {
 
   .oval-container {
     width: 0vh;
-    height: 0vh; 
+    height: 0vh;
   }
 
   .pdf-container {
@@ -503,7 +502,7 @@ main {
     padding: 0;
     max-height: none;
     overflow-y: visible;
-    height:60vh;
+    height: 60vh;
     width: 100%;
   }
 
@@ -511,7 +510,7 @@ main {
     flex: 0 0 80%;
     width: 80%;
     margin-right: 0;
-    margin-bottom: 1vh; 
+    margin-bottom: 1vh;
     min-height: auto;
     height: auto;
   }
@@ -573,6 +572,10 @@ main {
 
   .oval-container {
     width: 0vh;
-    height: 0vh; 
+    height: 0vh;
+  }
+  .footer{
+    scale: .60;
+    width: 100%;
   }
 }

@@ -1,69 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
     <title>CV</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
     <style>
       .pdfFallbackMessage {
         display: none;
         text-align: center;
-            padding: 20px;
-            background-color: #f8f8f8;
-            border: 1px solid #ddd;
-            margin-top: 20px;
-        }
+        padding: 20px;
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        margin-top: 20px;
+      }
     </style>
-</head>
-<body>
-  <div class="inprogress-container">
-    <h1 class="inconsolata-header" >Thankyou!</h1>
-    <p class="inconsolata-content">For visiting my portfolio site... might aswell look at my CV while youre here. &#128513;</p>
+  </head>
+  <body>
+    <div class="inprogress-container">
+      <h1 class="inconsolata-header">Thankyou!</h1>
+      <p class="inconsolata-content">
+        For visiting my portfolio site... might aswell look at my CV while youre
+        here. &#128513;
+      </p>
 
-
-    <!-- PDF Embed and Download Section -->
-    <div class="pdf-container">
-      <embed class="embed-cv" src="Owen Shaw CV 2024.pdf" type="application/pdf" width="100%" />
-      <div id="pdfFallbackMessage">
-        <p class="inconsolata-content">Your browser doesn't support embedded PDFs. You can <a href="Owen Shaw CV 2024.pdf" download>download the CV here</a> instead.</p>
+      <!-- PDF Embed and Download Section -->
+      <div class="pdf-container">
+        <embed
+          class="embed-cv"
+          src="Owen Shaw CV 2024.pdf"
+          type="application/pdf"
+          width="100%"
+        />
+        <div id="pdfFallbackMessage">
+          <p class="inconsolata-content">
+            Your browser doesn't support embedded PDFs. You can
+            <a href="Owen Shaw CV 2024.pdf" download>download the CV here</a>
+            instead.
+          </p>
+        </div>
       </div>
-    </div>
 
+      <img
+        class="gopherimg"
+        src="https://golang.org/doc/gopher/doc.png"
+        style="padding-top: 4vh"
+        alt="Go Gopher"
+      />
 
-    <img class="gopherimg" src="https://golang.org/doc/gopher/doc.png" style="padding-top: 4vh;"alt="Go Gopher">
-
-    <footer class="footer">
+      <footer class="footer">
         <p class="inconsolata-content">contact me via socials or email...</p>
         <div class="social-images-container">
-          <a href="https://www.linkedin.com/in/owen-shaw-b32b821b8/" target="_blank" class="social-icon">
-            <img src="images/socials/linkedin-logo-grayscale.webp" alt="LinkedInLogo" class="normal-icon">
-            <img src="images/socials/linkedin-logo-color.png" alt="LinkedInLogo" class="hover-icon">
+          <a
+            href="https://www.linkedin.com/in/owen-shaw-b32b821b8/"
+            target="_blank"
+            class="social-icon"
+          >
+            <img
+              src="images/socials/linkedin-logo-grayscale.webp"
+              alt="LinkedInLogo"
+              class="normal-icon"
+            />
+            <img
+              src="images/socials/linkedin-logo-color.png"
+              alt="LinkedInLogo"
+              class="hover-icon"
+            />
           </a>
-          <a href="https://github.com/oshaw1" target="_blank" class="social-icon">
-            <img src="images/socials/github-logo-grayscale.png" alt="GithubLogo" class="normal-icon">
-            <img src="images/socials/github-logo-color.png" alt="GithubLogo" class="hover-icon">
+          <a
+            href="https://github.com/oshaw1"
+            target="_blank"
+            class="social-icon"
+          >
+            <img
+              src="images/socials/github-logo-grayscale.png"
+              alt="GithubLogo"
+              class="normal-icon"
+            />
+            <img
+              src="images/socials/github-logo-color.png"
+              alt="GithubLogo"
+              class="hover-icon"
+            />
           </a>
           <div class="social-icon" id="emailLogo">
-            <img src="images/socials/email-logo-grayscale.png" alt="EmailLogo" class="normal-icon">
-            <img src="images/socials/email-logo-color.png" alt="EmailLogo" class="hover-icon">
+            <img
+              src="images/socials/email-logo-grayscale.png"
+              alt="EmailLogo"
+              class="normal-icon"
+            />
+            <img
+              src="images/socials/email-logo-color.png"
+              alt="EmailLogo"
+              class="hover-icon"
+            />
           </div>
         </div>
         <div id="copyMessage" class="copy-message"></div>
       </footer>
-  </div>
-  <script>
-    window.addEventListener('load', function() {
-      var embed = document.getElementById('pdfEmbed');
-      var fallbackMessage = document.getElementById('pdfFallbackMessage');
-      
-      if (embed.getAttribute('src') === 'about:blank' || !embed.contentDocument) {
-        fallbackMessage.style.display = 'block';
-        embed.style.display = 'none';
-      }
-    });
-  </script>
-</body>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        var embed = document.getElementById("pdfEmbed");
+        var fallbackMessage = document.getElementById("pdfFallbackMessage");
+
+        if (
+          embed.getAttribute("src") === "about:blank" ||
+          !embed.contentDocument
+        ) {
+          fallbackMessage.style.display = "block";
+          embed.style.display = "none";
+        }
+      });
+    </script>
+  </body>
 </html>
