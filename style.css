@@ -575,7 +575,6 @@ main {
     float: bottom;
   }
   .intro-text{
-    scale: .60;
-    width: 100%;
+    scale: .40;
   }
 }
