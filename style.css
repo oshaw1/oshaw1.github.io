@@ -575,13 +575,4 @@ main {
     width: 0vh;
     height: 0vh; 
   }
-
-  .pdf-container {
-    width: 90%;
-    height: 60vh; /* Increased from 50vh to 60vh */
-  }
-
-  .embed-cv {
-    height: 60vh; /* Increased from 50vh to 60vh */
-  }
 }
