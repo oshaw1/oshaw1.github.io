@@ -553,11 +553,6 @@ main {
     width: 100%;
   }
 
-  .intro-text {
-    height: auto;
-    padding: 3vh 0; /* Increased from 2vh to 3vh */
-  }
-
   .oooh-baby-regular {
     font-size: 6vw;
   }
@@ -576,7 +571,7 @@ main {
   }
   .footer{
     scale: .60;
-    margin-bottom: -1vh;
+    margin-top: -2vh;
     width: 100%;
   }
   .intro-text{
