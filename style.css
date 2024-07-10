@@ -486,7 +486,7 @@ main {
   }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (max-width: 480px) and (max-width: 767px) {
   body {
     overflow-y: auto;
   }
