@@ -572,10 +572,7 @@ main {
   .footer{
     background-color: white;
   }
-  .social-images-container{
+  .social-images-container img{
     scale: .60
-  }
-  .intro-text{
-    scale: .60;
   }
 }
