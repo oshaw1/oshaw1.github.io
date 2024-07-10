@@ -76,3 +76,32 @@ document.addEventListener('DOMContentLoaded', function() {
       return color;
     }
   });
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+cardContainer.addEventListener('touchstart', (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+cardContainer.addEventListener('touchend', (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const swipeDistance = touchStartX - touchEndX;
+  if (Math.abs(swipeDistance) > 50) {
+    cardContainer.scrollLeft += swipeDistance;
+    handleScroll();
+  }
+}
+
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', () => {
+    const content = card.querySelector('.card-content') || card.querySelector('.fixed-card-content');
+    if (content) {
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  });
+});
