@@ -388,7 +388,7 @@ main {
   padding-top: 5vh;
 }
 
-@media (max-width: 768px) {
+@media (hover: none) and (pointer: coarse)  {
   body {
     overflow-y: auto;
   }
