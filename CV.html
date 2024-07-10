@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+      #pdfFallbackMessage {
+        display: none;
+        text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
   <div class="inprogress-container">
@@ -17,6 +27,10 @@
     <!-- PDF Embed and Download Section -->
     <div class="pdf-container">
       <embed class="embed-cv" src="Owen Shaw CV 2024.pdf" type="application/pdf" width="100%" />
+    </div>
+
+    <div id="pdfFallbackMessage">
+      <p class="inconsolata-content">Your browser doesn't support embedded PDFs. You can <a href="Owen Shaw CV 2024.pdf" download>download the CV here</a> instead.</p>
     </div>
 
 
@@ -41,5 +55,16 @@
         <div id="copyMessage" class="copy-message"></div>
       </footer>
   </div>
+  <script>
+    window.addEventListener('load', function() {
+      var embed = document.getElementById('pdfEmbed');
+      var fallbackMessage = document.getElementById('pdfFallbackMessage');
+      
+      if (embed.getAttribute('src') === 'about:blank' || !embed.contentDocument) {
+        fallbackMessage.style.display = 'block';
+        embed.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>
