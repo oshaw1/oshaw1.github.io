@@ -570,11 +570,12 @@ main {
     height: 0vh;
   }
   .footer{
-    scale: .60;
-    margin-top: -2vh;
-    float: bottom;
+    background-color: white;
+  }
+  .social-images-container{
+    scale: .60
   }
   .intro-text{
-    scale: .40;
+    scale: .60;
   }
 }
