@@ -135,7 +135,7 @@ h1 {
 }
 
 .intro-text {
-  height: 10vh;
+  height: 15vh;
   align-content: center;
   text-align: center;
   background-color: #ffffff;
@@ -502,6 +502,7 @@ main {
     padding: 0;
     max-height: none;
     overflow-y: visible;
+    height: 60vh;
     width: 100%;
   }
 
@@ -509,6 +510,7 @@ main {
     flex: 0 0 80%;
     width: 80%;
     margin-right: 0;
+    margin-bottom: 1vh;
     min-height: auto;
     height: auto;
   }
@@ -547,7 +549,7 @@ main {
   }
 
   .card-front {
-    height: 15vh;
+    height: 100%;
     width: 100%;
   }
 
@@ -573,13 +575,7 @@ main {
   .social-images-container img{
     scale: .60
   }
-  .section-header{
-    margin-top: 1vh;
-  }
   .intro-text{
     scale:.80;
-  }
-  .footer{
-    position: relative;
   }
 }
