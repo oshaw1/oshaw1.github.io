@@ -135,7 +135,8 @@ h1 {
 }
 
 .intro-text {
-  height: 150px;
+  padding-top: 1vh;
+  height: 10vh;
   align-content: center;
   text-align: center;
   background-color: #ffffff;
@@ -273,7 +274,7 @@ main {
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  padding-bottom: 2vh; /* Adjusted to use viewport height */
+  padding-bottom: 2vh;
   text-align: center;
 }
 
@@ -493,24 +494,23 @@ main {
 
   .content-container {
     height: auto;
-    padding-bottom: 15vh;
+    padding-bottom:0vh;
+    padding-right: 3vh;
+    margin-left: -2vh;
   }
 
   .card-container {
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding-bottom:0vh;
     max-height: none;
-    overflow-y: visible;
-    height: 60vh;
     width: 100%;
   }
 
   .card-column {
-    flex: 0 0 80%;
+    flex: 0 0 auto;
     width: 80%;
     margin-right: 0;
-    margin-bottom: 1vh;
     min-height: auto;
     height: auto;
   }
@@ -520,7 +520,10 @@ main {
     max-width: 100%;
     margin-left: 0;
   }
-
+  .section-header{
+    padding-top: 1vh;
+    padding-bottom: .5vh;
+  }
   .card {
     width: 100%;
     height: 100vh; /* Increased from 80vh to 100vh */
@@ -538,7 +541,7 @@ main {
     width: 100%;
     height: 100%;
     background-color: #f9f9f9;
-    padding: 2vh; /* Increased from 1vh to 2vh for more internal padding */
+    padding: 1vh; /* Increased from 1vh to 2vh for more internal padding */
     box-sizing: border-box;
     overflow-y: auto;
   }
@@ -549,7 +552,7 @@ main {
   }
 
   .card-front {
-    height: 100%;
+    height: 12vh;
     width: 100%;
   }
 
@@ -570,12 +573,6 @@ main {
     height: 0vh;
   }
   .footer{
-    background-color: white;
-  }
-  .social-images-container img{
-    scale: .60
-  }
-  .intro-text{
-    scale:.80;
+    position: relative;
   }
 }
