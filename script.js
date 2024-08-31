@@ -4,7 +4,6 @@ const scrollSpeed = 2.5;
 
 const handleScroll = () => {
   const containerRect = cardContainer.getBoundingClientRect();
-  const containerWidth = containerRect.width / 1.15; 
   const containerLeft = containerRect.left / 1.15; 
   const containerRight = containerRect.right / 1.15; 
 
