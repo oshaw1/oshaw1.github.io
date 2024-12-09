@@ -353,7 +353,7 @@ main {
 
 .github-button {
   background-color: #ffffff;
-  border: 0;
+  border: 2px solid transparent; 
   border-radius: 0.5rem;
   box-sizing: border-box;
   color: #111827;
@@ -361,16 +361,19 @@ main {
   padding: 0.75rem 1rem;
   text-align: center;
   text-decoration: none #d1d5db solid;
+  font-weight: bold;
   text-decoration-thickness: auto;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   cursor: pointer;
   touch-action: manipulation;
   display: inline-block;
   align-self: flex-end;
+  transition: border-color 0.3s ease;  
 }
 
 .github-button:hover {
-  background-color: rgb(249, 250, 251);
+  border-color: var(--hover-color, transparent); 
+  box-shadow: 0 0 2px var(--hover-color);
 }
 
 .github-button:focus {

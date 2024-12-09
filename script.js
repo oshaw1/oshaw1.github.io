@@ -39,7 +39,7 @@ const emailLogo = document.getElementById('emailLogo');
 const copyMessage = document.getElementById('copyMessage');
 
 emailLogo.addEventListener('click', () => {
-  const email = 'o.shaw01942@gmail.com'; // Replace with your email address
+  const email = 'o.shaw01942@gmail.com';
   navigator.clipboard.writeText(email)
     .then(() => {
       copyMessage.textContent = 'Copied email to clipboard!';
@@ -53,28 +53,50 @@ emailLogo.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const cards = document.querySelectorAll('.card');
-  
-    cards.forEach(function(card) {
-      card.addEventListener('mouseenter', function() {
-        const randomColor = getRandomColor();
-        card.style.setProperty('--hover-color', randomColor);
-      });
-  
-      card.addEventListener('mouseleave', function() {
-        card.style.removeProperty('--hover-color');
-      });
-    });
-  
-    function getRandomColor() {
-      const letters = '0123456789ABCDEF';
-      let color = '#';
-      for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+  const cards = document.querySelectorAll('.card');
+  const oohBabyText = document.querySelector('.oooh-baby-regular');
+  const githubButton = document.querySelector('.github-button');
+  let currentColor = null;
+
+  cards.forEach(function(card) {
+    card.addEventListener('mouseenter', function() {
+      currentColor = getRandomColor();
+      card.style.setProperty('--hover-color', currentColor);
+      if (oohBabyText) {
+        oohBabyText.style.color = currentColor;
       }
-      return color;
-    }
+    });
+
+    card.addEventListener('mouseleave', function() {
+      currentColor = null;
+      card.style.removeProperty('--hover-color');
+      if (oohBabyText) {
+        oohBabyText.style.color = '';
+      }
+    });
   });
+
+  if (githubButton) {
+    githubButton.addEventListener('mouseenter', function() {
+      if (currentColor) {
+        githubButton.style.setProperty('--hover-color', currentColor);
+      }
+    });
+
+    githubButton.addEventListener('mouseleave', function() {
+      githubButton.style.removeProperty('--hover-color');
+    });
+  }
+
+  function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
+});
 
 let touchStartX = 0;
 let touchEndX = 0;
