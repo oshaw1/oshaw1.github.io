@@ -24,6 +24,21 @@ const handleScroll = () => {
   });
 };
 
+const modal = document.createElement('div');
+modal.className = 'modal';
+document.body.appendChild(modal);
+
+document.querySelectorAll('.card-img').forEach(img => {
+  img.style.cursor = 'pointer';
+  img.onclick = (e) => {
+    e.stopPropagation();
+    modal.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
+    modal.style.display = 'block';
+  };
+});
+
+modal.onclick = () => modal.style.display = 'none';
+
 const handleWheel = (e) => {
   if (e.deltaY !== 0 || e.deltaX !== 0) {
     e.preventDefault();
