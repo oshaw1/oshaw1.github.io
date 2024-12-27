@@ -29,22 +29,58 @@ modal.className = 'modal';
 document.body.appendChild(modal);
 
 document.querySelectorAll('.card-img').forEach(img => {
-  img.style.cursor = 'pointer';
   img.onclick = (e) => {
     e.stopPropagation();
-    modal.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
+    modal.innerHTML = `<img src="${img.src}" class="enlarged-img" alt="${img.alt}">`;
+    modal.style.display = 'block';
+  };
+  img.ontap = (e) => {
+    e.stopPropagation();
+    modal.innerHTML = `<img src="${img.src}" class="enlarged-img" alt="${img.alt}" style="max-width: 90vw; max-height: 90vh; object-fit: contain;">`;
     modal.style.display = 'block';
   };
 });
 
 document.querySelectorAll('.card-imgRectangle').forEach(img => {
-  img.style.cursor = 'pointer';
+  // Wrap image in container
+  const container = document.createElement('div');
+  container.className = 'card-img-container';
+  img.parentNode.insertBefore(container, img);
+  container.appendChild(img);
+  
+  // Add zoom indicator
+  const zoomIcon = document.createElement('div');
+  zoomIcon.className = 'zoom-indicator';
+  zoomIcon.innerHTML = '🔍';
+  container.appendChild(zoomIcon);
+
+  // Modal functionality
   img.onclick = (e) => {
     e.stopPropagation();
-    modal.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
+    modal.innerHTML = `<img src="${img.src}" class="enlarged-img" alt="${img.alt}" style="max-width: 90vw; max-height: 90vh; object-fit: contain;">`;
+    modal.style.display = 'block';
+  };
+  img.ontap = (e) => {
+    e.stopPropagation();
+    modal.innerHTML = `<img src="${img.src}" class="enlarged-img" alt="${img.alt}" style="max-width: 90vw; max-height: 90vh; object-fit: contain;">`;
     modal.style.display = 'block';
   };
 });
+
+document.querySelectorAll('.card-img').forEach(img => {
+  // Wrap image in container
+  const container = document.createElement('div');
+  container.className = 'oval-container';
+  img.parentNode.insertBefore(container, img);
+  container.appendChild(img);
+  
+  // Add zoom indicator
+  const zoomIcon = document.createElement('div');
+  zoomIcon.className = 'zoom-indicator';
+  zoomIcon.innerHTML = '🔍';
+  container.appendChild(zoomIcon);
+});
+
 
 modal.onclick = () => modal.style.display = 'none';
 
