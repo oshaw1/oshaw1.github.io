@@ -37,6 +37,15 @@ document.querySelectorAll('.card-img').forEach(img => {
   };
 });
 
+document.querySelectorAll('.card-imgRectangle').forEach(img => {
+  img.style.cursor = 'pointer';
+  img.onclick = (e) => {
+    e.stopPropagation();
+    modal.innerHTML = `<img src="${img.src}" alt="${img.alt}">`;
+    modal.style.display = 'block';
+  };
+});
+
 modal.onclick = () => modal.style.display = 'none';
 
 const handleWheel = (e) => {
